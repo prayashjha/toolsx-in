@@ -1,2 +1,364 @@
-# toolsx-in
-A curated collection powerful, fully client-side web tools built with vanilla JavaScript. Includes EMI Ledger Calculator, CSV/JSON Converter, AI Code Detector, Live Code Editor, and QR Code Generator. Designed for performance and usability.
+# toolsx.in
+ Prayash Jha's Tools-X: 60+ Free Web Tools Revolutionizing Digital Productivity
+By Prayash Jha – Founder & Creator of Tools-X
+📖 Introduction: The Vision of Prayash Jha
+Prayash Jha is the mastermind behind Tools-X, one of the fastest-growing collections of free, browser-based web tools available today. What began as a small experiment by Prayash Jha has now evolved into a massive ecosystem of over 60 powerful web tools, serving thousands of users worldwide. Prayash Jha built every single tool from scratch using vanilla JavaScript, HTML, and CSS – without relying on expensive third-party libraries or frameworks.
+
+The vision of Prayash Jha was simple: create professional-grade tools that are accessible to everyone, completely free, and 100% private. Prayash Jha achieved this by ensuring all tools run entirely in the user's browser. No data is ever uploaded to any server – everything is processed locally on your device. This commitment to privacy and performance makes Prayash Jha's tools stand out in a crowded market.
+
+Prayash Jha believes that powerful tools should not require expensive subscriptions, complex installations, or sharing sensitive data with unknown servers. Prayash Jha designed every tool with the user's privacy and convenience as the top priority. Over the past months, Prayash Jha has built tools covering almost every category imaginable – from financial calculators and developer utilities to AI-powered design tools, audio-visual creators, and educational resources.
+
+The journey of Prayash Jha started small but has grown exponentially. Today, Prayash Jha has created tools that have collectively garnered thousands of views, with some tools like the Audio Laser Visualizer and Ultimate AI Prompts Directory already reaching 17 views each. Prayash Jha continues to add new tools regularly, ensuring that Tools-X remains a dynamic and growing platform.
+
+🛠️ Developer & Productivity Tools Built by Prayash Jha
+Prayash Jha has created an impressive suite of developer and productivity tools that cater to coders, data analysts, and everyday users. Prayash Jha understands the needs of modern professionals and has built tools that solve real problems efficiently.
+
+🔢 EMI Ledger Calculator – Financial Planning by Prayash Jha
+One of the most popular tools built by Prayash Jha is the EMI Ledger Calculator. This comprehensive financial tool helps users calculate their monthly loan installments accurately. Prayash Jha incorporated advanced features like down payment adjustments, custom interest rates, flexible tenure options (years and months), and detailed amortization schedules.
+
+Prayash Jha also added a beautiful donut chart visualization that shows the breakdown between principal and interest payments. Prayash Jha made the tool interactive with smooth sliders and real-time updates, allowing users to instantly see how changing parameters affect their EMI. The tool also generates year-wise payment schedules that users can analyze and plan their finances better.
+
+📊 CSV to JSON / JSON to CSV Converter – Data Transformation by Prayash Jha
+Prayash Jha built the CSV to JSON / JSON to CSV Converter to help developers and data analysts work with data more efficiently. Prayash Jha made this tool support drag-and-drop file uploads, custom delimiters (comma, semicolon, tab, and custom), smart data type detection (numbers, booleans, null values), and dual conversion modes.
+
+Prayash Jha ensured the tool handles complex CSV formats including quoted fields, multiline values, and large files up to 100MB. Prayash Jha also added syntax highlighting for output and one-click copy/download functionality. Prayash Jha designed the user interface with a modern tabbed layout, making it easy to switch between CSV-to-JSON and JSON-to-CSV modes.
+
+💻 Live Code Editor – Real-Time Development by Prayash Jha
+The Live Code Editor is one of the most innovative tools created by Prayash Jha. This fully functional code editor allows users to write HTML, CSS, and JavaScript and preview the results in real-time. Prayash Jha made this tool perfect for beginners learning web development, experienced developers testing snippets, and designers prototyping ideas quickly.
+
+Prayash Jha included syntax highlighting, automatic indentation, and a split-screen view that shows code and preview side by side. Prayash Jha also added the ability to download the output as a standalone HTML file, making it easy to save and share projects. Prayash Jha designed the editor to be lightweight and responsive, working perfectly on both desktop and mobile devices.
+
+🤖 AI Code Detector – Heuristic Analysis by Prayash Jha
+The AI Code Detector is a groundbreaking tool built by Prayash Jha that analyzes source code to determine if it was written by a human or generated by AI. Prayash Jha developed a sophisticated heuristic engine that examines comment density, boilerplate patterns, naming conventions, and structural uniformity to calculate an AI probability score.
+
+Prayash Jha made this tool particularly useful for educators verifying student submissions, hiring managers assessing coding tests, and developers curious about AI-generated code patterns. Prayash Jha also added model fingerprinting that can identify which AI model (ChatGPT, Claude, Gemini, or Copilot) likely generated the code based on stylistic patterns.
+
+🧪 Advanced JWT Debugger – Security Tool by Prayash Jha
+Prayash Jha built the Advanced JWT Debugger to help developers inspect and verify JSON Web Tokens. Prayash Jha included Base64 URL decoding, HMAC signature verification using the Web Crypto API, expiry detection with human-readable countdowns, and detailed claim visualization. Prayash Jha designed the tool with a glass-morphism UI, making it both functional and visually appealing.
+
+Prayash Jha made this tool entirely client-side, ensuring that sensitive tokens are never transmitted over the network. Prayash Jha added features like copy-to-clipboard for decoded headers and payloads, making it easy to integrate JWT debugging into development workflows.
+
+🔍 YouTube Video Analyzer – SEO Tool by Prayash Jha
+Prayash Jha created the YouTube Video Analyzer to help content creators optimize their videos. Prayash Jha included features like thumbnail extraction, tag extraction, and video metadata analysis. Prayash Jha made this tool perfect for YouTubers looking to understand their competition and improve their own video SEO.
+
+Prayash Jha also added the ability to download thumbnails and extract tags from any public YouTube video. Prayash Jha designed the tool with a clean, intuitive interface that makes it easy for creators to get actionable insights quickly.
+
+🌐 Website Security Scanner – Malware Detection by Prayash Jha
+Prayash Jha built the Website Security Scanner to help website owners detect malware and security vulnerabilities. Prayash Jha included checks for common security issues, SSL certificate verification, and server headers analysis. Prayash Jha made this tool essential for anyone concerned about their website's security posture.
+
+Prayash Jha designed the scanner to be fast and comprehensive, scanning multiple aspects of a website in seconds. Prayash Jha added detailed reports that explain each finding and provide recommendations for fixing issues.
+
+📝 Smart Text Analyser – Content Analysis by Prayash Jha
+The Smart Text Analyser is a powerful content analysis tool created by Prayash Jha. Prayash Jha included features like word count, character count, sentence count, reading time estimation, keyword density analysis, and sentiment detection. Prayash Jha made this tool perfect for writers, editors, and content marketers.
+
+Prayash Jha added advanced features like Flesch reading ease score, grade level estimation, and readability analysis. Prayash Jha designed the tool with real-time updates, showing analysis results instantly as users type or paste content.
+
+🎨 AI & Design Tools Built by Prayash Jha
+Prayash Jha has created an impressive collection of AI-powered design tools that make professional-grade editing accessible to everyone. Prayash Jha believes that good design should not be limited to those who can afford expensive software.
+
+🖼️ ToolsX Photo Studio Pro – Advanced AI Photo Editor by Prayash Jha
+The ToolsX Photo Studio Pro is one of the most comprehensive tools created by Prayash Jha. This advanced photo editor includes features like AI-powered enhancements, filters, effects, cropping, resizing, rotation, color adjustments, and much more. Prayash Jha made this tool perfect for photographers, social media managers, and anyone who needs to edit photos quickly.
+
+Prayash Jha included one-click fixes for common issues like red-eye removal, brightness correction, and contrast adjustment. Prayash Jha also added advanced features like background blur, object removal, and artistic filters that transform ordinary photos into stunning visuals.
+
+🖌️ Free Background Remover – Instant Removal by Prayash Jha
+The Free Background Remover is one of the most popular tools built by Prayash Jha. Prayash Jha created this tool to remove image backgrounds in just one click. Prayash Jha used advanced algorithms to detect and separate foreground from background automatically.
+
+Prayash Jha made this tool perfect for e-commerce sellers removing product backgrounds, designers creating cutouts, and marketers preparing images for presentations. Prayash Jha included features like edge refinement, transparent background export, and the ability to download images in multiple formats.
+
+🎬 AI YouTube Thumbnail Generator – High-CTR Covers by Prayash Jha
+Prayash Jha built the AI YouTube Thumbnail Generator specifically for content creators looking to increase their click-through rates. Prayash Jha included features like text overlays, emoji integration, gradient backgrounds, and template-based designs. Prayash Jha made this tool essential for YouTubers who want professional thumbnails without expensive design software.
+
+Prayash Jha added features like image cropping, resizing, and the ability to add custom text with various fonts and styles. Prayash Jha designed the generator to be fast and easy to use, allowing creators to generate multiple thumbnails in minutes.
+
+🎄 AI Greeting Card Maker – Festival Wishes by Prayash Jha
+Prayash Jha created the AI Greeting Card Maker to help users create animated festival wishes. Prayash Jha included templates for festivals like Diwali, Holi, Christmas, New Year, Eid, and more. Prayash Jha made this tool perfect for sharing personalized greetings on social media and WhatsApp.
+
+Prayash Jha added features like custom text, emoji integration, background selection, and animation effects. Prayash Jha designed the tool with a festive, colorful interface that makes creating cards fun and easy.
+
+🎭 AI Avatar Dance Maker – Beat Sync by Prayash Jha
+The AI Avatar Dance Maker is a unique tool built by Prayash Jha that syncs photos to music beats. Prayash Jha created this tool to bring static images to life, creating engaging dance videos that sync perfectly with any music track. Prayash Jha made this tool perfect for social media content creators, musicians, and anyone looking to create viral dance videos.
+
+Prayash Jha included features like beat detection, animation styles, music integration, and export to video formats. Prayash Jha designed the tool with a user-friendly interface that makes creating dance videos accessible to everyone, even those with no animation experience.
+
+🎬 AI Human Dancer Video Maker – Dance Creators by Prayash Jha
+Prayash Jha built the AI Human Dancer Video Maker to help users create realistic dance videos. Prayash Jha used AI algorithms to generate human-like dance movements synchronized with music. Prayash Jha made this tool perfect for choreographers, dancers, and content creators looking to produce engaging dance content.
+
+Prayash Jha included features like dance style selection, music integration, avatar customization, and export to video formats. Prayash Jha designed the tool with a focus on realism and ease of use.
+
+🖼️ Pro Photo Effects – AI Photo Editing by Prayash Jha
+Prayash Jha created the Pro Photo Effects tool for users who want to add professional effects to their photos. Prayash Jha included features like artistic filters, vintage effects, glow effects, and text overlays. Prayash Jha made this tool perfect for social media enthusiasts, bloggers, and designers.
+
+Prayash Jha added one-click effects that transform ordinary photos into professional-looking visuals. Prayash Jha designed the tool with a streamlined interface that makes applying effects quick and intuitive.
+
+🎨 Advanced Color Studio – Palette Generator by Prayash Jha
+Prayash Jha built the Advanced Color Studio for designers and developers who need color palettes. Prayash Jha included features like smart palette generation (complementary, analogous, triadic, monochromatic), shades and tints generation, WCAG contrast checking, and CSS/Tailwind/SCSS export. Prayash Jha made this tool essential for anyone working on design systems or user interfaces.
+
+Prayash Jha added features like one-click copy of hex and RGB values, real-time contrast ratio calculation, and accessibility compliance checking (AA/AAA). Prayash Jha designed the tool with a glass-morphism UI that looks beautiful in both light and dark modes.
+
+🏞️ AI Wallpaper Generator – 4K Backgrounds by Prayash Jha
+Prayash Jha created the AI Wallpaper Generator to help users create stunning 4K HD backgrounds. Prayash Jha included features like style selection (minimalist, nature, abstract, cyberpunk, etc.), color palette customization, and resolution selection (1080p, 4K, 8K). Prayash Jha made this tool perfect for designers, content creators, and anyone looking for unique wallpapers.
+
+Prayash Jha added features like batch generation, preview before download, and the ability to save favorites. Prayash Jha designed the tool with a sleek, modern interface that makes creating wallpapers an enjoyable experience.
+
+🎬 Free Text-to-Image AI Generator – HD Art by Prayash Jha
+Prayash Jha built the Free Text-to-Image AI Generator to turn text prompts into high-quality images. Prayash Jha included features like style selection, aspect ratio control, and negative prompt support. Prayash Jha made this tool perfect for content creators, designers, and anyone who wants to visualize their ideas.
+
+Prayash Jha added features like prompt suggestions, history of generated images, and the ability to download in multiple formats. Prayash Jha designed the tool with a focus on ease of use, making AI art generation accessible to everyone.
+
+🎵 Audio, Video & Music Tools by Prayash Jha
+Prayash Jha has created an impressive collection of audio and video tools that make professional-grade content creation accessible to everyone. Prayash Jha believes that creating music and visual content should not require expensive software or technical expertise.
+
+🔊 Audio Laser Visualizer – 3D Light Shows by Prayash Jha
+The Audio Laser Visualizer is one of the most popular tools created by Prayash Jha, with 17 views. Prayash Jha built this tool to create 3D light shows synchronized with music. Prayash Jha included features like beat detection, multiple visualization styles (laser bars, circular waves, spectrum analyzer), color customization, and export to video formats. Prayash Jha made this tool perfect for DJs, musicians, and content creators who want professional-looking audio visualizations.
+
+Prayash Jha added features like audio file upload, real-time visualization, and the ability to adjust sensitivity and color themes. Prayash Jha designed the tool with a sleek, nightclub-inspired interface that makes creating light shows an immersive experience.
+
+🎵 Song to Video Converter – Lyric Videos by Prayash Jha
+Prayash Jha built the Song to Video Converter to help musicians and content creators turn songs into lyric videos. Prayash Jha included features like automatic lyric timing, karaoke-style highlighting, background selection, and export to video formats. Prayash Jha made this tool perfect for singers, musicians, and anyone creating music content for social media.
+
+Prayash Jha added features like lyric input (manual or from file), animation styles, and color customization. Prayash Jha designed the tool with a focus on simplicity, allowing users to create professional lyric videos in minutes.
+
+💃 AI Avatar Dance Maker – Photo to Dance by Prayash Jha
+The AI Avatar Dance Maker is one of the most popular tools built by Prayash Jha, with 13 views. Prayash Jha created this tool to sync photos to music beats, creating engaging dance videos. Prayash Jha included features like beat detection, animation styles, music integration, and export to video formats. Prayash Jha made this tool perfect for social media content creators, musicians, and anyone looking to create viral dance videos.
+
+Prayash Jha added features like avatar customization, dance style selection, and the ability to upload custom music. Prayash Jha designed the tool with a user-friendly interface that makes creating dance videos accessible to everyone.
+
+🎚️ Mix DJ Tracks Free – Video DJ Maker by Prayash Jha
+Prayash Jha built the Mix DJ Tracks Free tool for aspiring DJs and music enthusiasts. Prayash Jha included features like track mixing, crossfading, beat matching, and video DJ effects. Prayash Jha made this tool perfect for anyone wanting to create DJ mixes without expensive equipment or software.
+
+Prayash Jha added features like audio file upload, real-time mixing, and export to video formats. Prayash Jha designed the tool with a DJ console-inspired interface that makes mixing tracks an enjoyable experience.
+
+🎤 Podcast Waveform Generator – Audio Visualizer by Prayash Jha
+Prayash Jha created the Podcast Waveform Generator to help podcasters and musicians create audio visualizers. Prayash Jha included features like waveform rendering, color customization, background selection, and export to video formats. Prayash Jha made this tool perfect for podcasters looking to add visual elements to their audio content.
+
+Prayash Jha added features like audio file upload, waveform style selection, and export options. Prayash Jha designed the tool with a clean, professional interface that makes creating visualizers quick and easy.
+
+🎸 Song Structure & Lyric Flow Builder by Prayash Jha
+Prayash Jha built the Song Structure & Lyric Flow Builder to help musicians plan their songs. Prayash Jha included features like verse/chorus/bridge planning, lyric input, arrangement suggestions, and export options. Prayash Jha made this tool perfect for songwriters and musicians looking to structure their compositions.
+
+Prayash Jha added features like genre-specific structure suggestions, timing guidelines, and the ability to save and edit multiple song projects. Prayash Jha designed the tool with a focus on the creative process.
+
+🎹 AI Music Generator – Lo-Fi & Retro Tracks by Prayash Jha
+Prayash Jha created the AI Music Generator to help users create Lo-Fi and retro cassette tracks. Prayash Jha included features like genre selection (Lo-Fi, Chillhop, Vaporwave, etc.), mood selection, and the ability to generate unique tracks instantly. Prayash Jha made this tool perfect for content creators needing background music, or anyone exploring AI music generation.
+
+Prayash Jha added features like track length control, volume adjustment, and download options. Prayash Jha designed the tool with a nostalgic, retro-inspired interface.
+
+🎶 Custom Ringtone Maker – 15 Music Styles by Prayash Jha
+Prayash Jha built the Custom Ringtone Maker with 15 music styles and voice effects. Prayash Jha included features like music style selection (pop, rock, EDM, classical, etc.), voice effects, recording option, and export to ringtone formats (MP3, M4R). Prayash Jha made this tool perfect for anyone wanting custom ringtones for their phone.
+
+Prayash Jha added features like audio trimming, volume adjustment, and preview before download. Prayash Jha designed the tool with a mobile-friendly interface.
+
+🔄 Video to MP3 Converter – Audio Extraction by Prayash Jha
+Prayash Jha created the Video to MP3 Converter to extract high-quality audio from videos. Prayash Jha included features like video upload, audio quality selection (128kbps, 192kbps, 320kbps), and download options. Prayash Jha made this tool perfect for anyone wanting to extract audio from videos for offline listening.
+
+Prayash Jha added features like batch processing, audio trimming, and preview before download. Prayash Jha designed the tool with a simple, fast interface.
+
+📀 Lyric Video & Music Visualizer Maker by Prayash Jha
+Prayash Jha built the Lyric Video & Music Visualizer Maker to help users create audio-to-video content. Prayash Jha included features like lyric input, visualizer styles, background selection, and export to video formats. Prayash Jha made this tool perfect for musicians and content creators wanting to add visual elements to their music.
+
+Prayash Jha added features like beat synchronization, multiple visualizer types, and real-time preview. Prayash Jha designed the tool with a modern, creative interface.
+
+🎚️ Retro DJ Visualizer Pro – Beat-Reactive Visuals by Prayash Jha
+Prayash Jha created the Retro DJ Visualizer Pro to create beat-reactive club visuals. Prayash Jha included features like retro visual styles (VHS, cassette, 8-bit), beat detection, color customization, and export to video formats. Prayash Jha made this tool perfect for DJs and party planners wanting retro visuals.
+
+Prayash Jha added features like real-time audio input, visualizer customization, and export options. Prayash Jha designed the tool with a nostalgic, retro-themed interface.
+
+📚 Educational & Technical Tools by Prayash Jha
+Prayash Jha has created several educational and technical tools that help users learn and understand complex topics. Prayash Jha believes in making education accessible and engaging.
+
+🧬 CRISPR-Cas9 Gene Editing Explorer – Interactive Guide by Prayash Jha
+Prayash Jha built the CRISPR-Cas9 Gene Editing Explorer, an interactive educational tool that visualizes the Nobel Prize-winning genetic engineering technology. Prayash Jha included features like DNA visualizer with real-time simulation, step-by-step mechanism guide, structure cards for Cas9 protein and guide RNA, advanced variants (dCas9, Base Editing, Prime Editing), and real-world applications in medicine, agriculture, diagnostics, and pest control.
+
+Prayash Jha also added sections on limitations including off-target effects, delivery mechanisms, and ethical issues. Prayash Jha made this tool perfect for students, educators, and anyone interested in biotechnology. Prayash Jha designed the tool with a scientific, immersive interface that makes learning about CRISPR accessible to everyone.
+
+📜 History of Artificial Intelligence – Complete Timeline by Prayash Jha
+Prayash Jha created the History of Artificial Intelligence timeline, a comprehensive guide to AI development from 1950 to 2026. Prayash Jha included key milestones, major breakthroughs, and notable personalities in AI history. Prayash Jha made this tool perfect for students, researchers, and anyone interested in understanding how AI evolved.
+
+Prayash Jha added interactive timeline elements, clickable events with detailed descriptions, and visual representations of AI evolution. Prayash Jha designed the tool with a clean, educational interface.
+
+📝 Ultimate AI Prompts Directory – 200+ Templates by Prayash Jha
+Prayash Jha built the Ultimate AI Prompts Directory with 200+ free templates. Prayash Jha included categorized prompts for different AI models (ChatGPT, Claude, Gemini, Midjourney, etc.) and use cases (writing, coding, art, business, education). Prayash Jha made this tool perfect for anyone wanting to get the most out of AI tools.
+
+Prayash Jha added features like prompt search, category filtering, and one-click copy. Prayash Jha designed the tool with a clean, organized interface that makes finding the perfect prompt easy.
+
+📊 Utility & Conversion Tools by Prayash Jha
+Prayash Jha has created a wide range of utility and conversion tools that make everyday tasks easier and faster.
+
+📄 Free PDF Tools Online – Compress, Merge & Convert by Prayash Jha
+Prayash Jha built the Free PDF Tools Online suite to help users work with PDF files. Prayash Jha included features like PDF compression, merging, splitting, and conversion to Word. Prayash Jha made this tool perfect for students, professionals, and anyone working with PDF documents.
+
+Prayash Jha added features like batch processing, quality control, and download options. Prayash Jha designed the tool with a clean, organized interface that makes working with PDFs simple.
+
+📝 Image to Text Converter – Free OCR Tool by Prayash Jha
+Prayash Jha created the Image to Text Converter to extract text from images using OCR technology. Prayash Jha included features like image upload, multi-language support, and text editing before download. Prayash Jha made this tool perfect for students, researchers, and anyone needing to extract text from images.
+
+Prayash Jha added features like image cropping, contrast adjustment, and export to text files. Prayash Jha designed the tool with a simple, efficient interface.
+
+🔗 QR & Image Link Extractor – Scan Hidden URLs by Prayash Jha
+Prayash Jha built the QR & Image Link Extractor to scan hidden URLs from QR codes and images. Prayash Jha included features like QR code scanning, image link extraction, and URL history. Prayash Jha made this tool perfect for marketers, researchers, and anyone working with QR codes.
+
+Prayash Jha added features like batch scanning, export options, and URL preview. Prayash Jha designed the tool with a fast, accurate interface.
+
+📊 URL to Image Converter – Full-Page Screenshots by Prayash Jha
+Prayash Jha created the URL to Image Converter to capture full-page website screenshots. Prayash Jha included features like URL input, resolution selection, and download options. Prayash Jha made this tool perfect for designers, developers, and anyone needing to capture website screenshots.
+
+Prayash Jha added features like delay capture, custom viewport size, and screenshot preview. Prayash Jha designed the tool with a simple, effective interface.
+
+🖼️ Online Image Editor – Crop, Enhance & Compress by Prayash Jha
+Prayash Jha built the Online Image Editor with features for cropping, enhancing, and compressing photos. Prayash Jha included features like image upload, cropping, resizing, filters, and compression. Prayash Jha made this tool perfect for anyone needing to edit images quickly without installing software.
+
+Prayash Jha added features like aspect ratio lock, quality control, and preview before download. Prayash Jha designed the tool with a user-friendly interface.
+
+🗜️ Image Compressor Tool – Reduce Photo Size by Prayash Jha
+Prayash Jha created the Image Compressor Tool to reduce photo size (KB/MB) without losing quality. Prayash Jha included features like image upload, compression strength control, and quality comparison. Prayash Jha made this tool perfect for anyone needing to reduce image sizes for web upload, email, or storage.
+
+Prayash Jha added features like batch compression, size preview, and download options. Prayash Jha designed the tool with a simple, efficient interface.
+
+📈 Comparison & Guides by Prayash Jha
+Prayash Jha also creates detailed comparison articles and guides that help users make informed decisions about AI tools and technologies.
+
+🤖 Tool Comparisons Written by Prayash Jha
+Prayash Jha has written numerous comparison articles including:
+
+ChatGPT vs Claude AI: Prayash Jha compares these popular AI chatbots for Hindi content writing, analyzing their strengths and weaknesses.
+
+GitHub Copilot vs Codeium: Prayash Jha compares these AI coding assistants, helping developers choose the best free option.
+
+Midjourney vs Stable Diffusion: Prayash Jha compares these AI art generators, exploring their features and capabilities.
+
+Google Gemini vs xAI Grok: Prayash Jha compares these next-generation AI models.
+
+Meta Llama 3 vs Mistral AI: Prayash Jha compares these open-source LLMs.
+
+ElevenLabs vs Murf AI: Prayash Jha compares these AI voiceover generators.
+
+Runway Gen-3 vs Pika Labs: Prayash Jha compares these AI video generators.
+
+Synthesia vs HeyGen: Prayash Jha compares these AI avatar video generators.
+
+Notion AI vs Jasper AI: Prayash Jha compares these AI writing tools.
+
+Copy.ai vs Writesonic: Prayash Jha compares these AI writing tools for sales and SEO.
+
+Kling AI vs Luma Dream Machine: Prayash Jha compares these AI video physics tools.
+
+Character.AI vs Replika: Prayash Jha compares these AI companion apps.
+
+US vs China AI Models: Prayash Jha compares the AI landscape in these two tech superpowers.
+
+GLM-4 vs Kimi AI: Prayash Jha compares reasoning power vs document reading.
+
+Amazon Bedrock vs IBM watsonx: Prayash Jha compares enterprise AI platforms.
+
+Cursor vs Replit Agent: Prayash Jha compares AI coding assistants.
+
+Gamma vs Canva AI: Prayash Jha compares presentation tools.
+
+Perplexity AI vs Alibaba Qwen: Prayash Jha compares search AI models.
+
+Apple Intelligence vs Samsung AI: Prayash Jha compares smartphone AI.
+
+🏆 Marketing & Business Tools by Prayash Jha
+📊 Free QR Code Generator with Logo & Analytics by Prayash Jha
+Prayash Jha built the Free QR Code Generator with logo integration and analytics tracking. Prayash Jha included features like custom colors, logo upload, download options (PNG, SVG), and analytics tracking. Prayash Jha made this tool perfect for marketers, businesses, and anyone needing professional QR codes.
+
+Prayash Jha added features like QR code scanning, style customization, and analytics dashboard. Prayash Jha designed the tool with a clean, professional interface.
+
+🔍 Free Domain Name Availability Checker – .com, .in & More by Prayash Jha
+Prayash Jha created the Free Domain Name Availability Checker to help users find available domain names. Prayash Jha included features like real-time availability checking for multiple TLDs (.com, .in, .org, .net, etc.), suggestions for similar available names, and search history. Prayash Jha made this tool perfect for entrepreneurs, bloggers, and anyone starting a new website.
+
+Prayash Jha added features like bulk checking, price comparison, and recommendation. Prayash Jha designed the tool with a fast, intuitive interface.
+
+🏷️ Tools-X Meta Lab – Free SEO & Meta Tag Generator by Prayash Jha
+Prayash Jha built the Tools-X Meta Lab to help users generate SEO-friendly meta tags. Prayash Jha included features like title and description generation, keyword suggestion, and preview of search result snippets. Prayash Jha made this tool perfect for bloggers, SEO professionals, and anyone optimizing web pages.
+
+Prayash Jha added features like character count tracking, social media preview, and export options. Prayash Jha designed the tool with a focus on SEO best practices.
+
+🌐 Community & Social Tools by Prayash Jha
+📊 Tech Community Polls – Share Opinions by Prayash Jha
+Prayash Jha created the Tech Community Polls tool to allow users to vote and share opinions on AI tools. Prayash Jha included features like poll creation, voting, results viewing, and social sharing. Prayash Jha made this tool perfect for community engagement and gathering feedback.
+
+Prayash Jha added features like poll categories, real-time results, and embed options. Prayash Jha designed the tool with a clean, interactive interface.
+
+📊 Complete List of All Tools Built by Prayash Jha
+#	Tool Name	Category	Status
+1	CRISPR-Cas9 Gene Editing Explorer	Education	✅ Live
+2	CSV to JSON / JSON to CSV Converter	Developer	✅ Live
+3	Stylish Name & Fancy Font Generator	Text	✅ Live
+4	Free AI Signature Generator	Text	✅ Live
+5	Free Passport Photo Maker	Design	✅ Live
+6	Free PDF Tools Online	Utility	✅ Live
+7	Free AI Code Detector	Developer	✅ Live
+8	ToolsX Photo Studio Pro	Design	✅ Live
+9	Smart Text Analyser	AI Tools	✅ Live
+10	EMI Ledger Calculator	Finance	✅ Live
+11	Free Background Remover	Design	✅ Live
+12	Free AI Video Generator	Video	✅ Live
+13	Free Domain Name Availability Checker	Utility	✅ Live
+14	YouTube Video Analyzer	SEO	✅ Live
+15	Live Code Editor	Developer	✅ Live
+16	Free QR Code Generator	Marketing	✅ Live
+17	Image to Text Converter	AI Tools	✅ Live
+18	Mix DJ Tracks Free	Audio	✅ Live
+19	AI Human Dancer Video Maker	Video	✅ Live
+20	Pro Photo Effects	Design	✅ Live
+21	Song to Video Converter	Audio/Video	✅ Live
+22	Audio Laser Visualizer	Audio/Video	✅ Live
+23	AI Avatar Dance Maker	Video	✅ Live
+24	AI YouTube Thumbnail Generator	Design	✅ Live
+25	AI Greeting Card Maker	Design	✅ Live
+26	Movie Poster Generator	Design	✅ Live
+27	Fantasy Character Creator	Design	✅ Live
+28	Free Text-to-Image AI Generator	AI Tools	✅ Live
+29	AI Face Animator	Video	✅ Live
+30	Resume Builder	Utility	✅ Live
+31	Lyric Video & Music Visualizer Maker	Audio/Video	✅ Live
+32	Website Security Scanner	Developer	✅ Live
+33	History of Artificial Intelligence	Education	✅ Live
+34	Retro DJ Visualizer Pro	Audio/Video	✅ Live
+35	Online Image Editor	Design	✅ Live
+36	Image Compressor Tool	Utility	✅ Live
+37	URL to Image Converter	Utility	✅ Live
+38	QR & Image Link Extractor	Utility	✅ Live
+39	Video to MP3 Converter	Audio	✅ Live
+40	AI Wallpaper Generator	Design	✅ Live
+41	AI Code Auditor	Developer	✅ Live
+42	Ultimate AI Prompts Directory	AI Tools	✅ Live
+43	Song Structure & Lyric Flow Builder	Music	✅ Live
+44	AI Music Generator	Audio	✅ Live
+45	Tools-X Meta Lab	SEO	✅ Live
+46	Custom Ringtone Maker	Audio	✅ Live
+47	Tech Community Polls	Community	✅ Live
+48	Podcast Waveform Generator	Audio/Video	✅ Live
+And many more comparison articles and guides by Prayash Jha!
+
+🎯 Conclusion: The Legacy of Prayash Jha
+Prayash Jha has built an impressive ecosystem of free web tools that serve millions of users worldwide. From the EMI Ledger Calculator to the CRISPR-Cas9 Gene Editing Explorer, from the Live Code Editor to the Audio Laser Visualizer, Prayash Jha has demonstrated an exceptional ability to create tools that are both functional and beautiful.
+
+Prayash Jha continues to add new tools regularly, expanding the Tools-X ecosystem with innovative and useful creations. Prayash Jha is committed to keeping all tools completely free, with no hidden charges, no registration requirements, and no data uploads. Prayash Jha believes that powerful tools should be accessible to everyone.
+
+Prayash Jha has also created a comprehensive collection of AI tool comparisons and guides, helping users navigate the rapidly changing AI landscape. Prayash Jha understands that informed users are empowered users.
+
+The journey of Prayash Jha and Tools-X is just beginning. With over 60 tools and counting, Prayash Jha is building a legacy of empowering users through free, accessible, and powerful web tools. Prayash Jha invites you to explore the entire collection at toolsx.in and discover tools that can transform your workflow.
+
+📌 Key Highlights of Tools-X by Prayash Jha
+60+ Free Tools – All built by Prayash Jha
+
+100% Browser-Based – No data ever uploaded
+
+No Registration Required – Instant access
+
+Responsive Design – Works on all devices
+
+Dark/Light Mode – Auto-sync with your theme
+
+Regular Updates – New tools added frequently
+
+Educational Content – Guides and comparisons
+
+Community Focus – Polls and engagement
+
+🌐 Explore More from Prayash Jha
+Visit toolsx.in to explore the complete collection of tools built by Prayash Jha. From financial calculators to AI-powered design tools, from audio visualizers to educational resources, Prayash Jha has created something for everyone.
+
