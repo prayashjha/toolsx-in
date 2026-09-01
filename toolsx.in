@@ -1,0 +1,814 @@
+<div class="tsx-v5-arw-root" id="tsxv5-arw-root">
+<style>
+  .tsx-v5-arw-root {
+    --bg: #ffffff;
+    --panel: #f8f9fa;
+    --panel2: #e9ecef;
+    --line: #dee2e6;
+    --text: #1a1a1a;
+    --muted: #495057;
+    --pink: #d63384;
+    --cyan: #0d6efd;
+    --gold: #ffc107;
+    --mono: 'JetBrains Mono', monospace;
+    --display: 'Space Grotesk', sans-serif;
+    --body: 'Inter', sans-serif;
+    
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 56px 20px 64px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px var(--line);
+  }
+  .tsx-v5-arw-root * { box-sizing: border-box; }
+  .tsx-v5-arw-root button { font-family: inherit; }
+
+  /* Dark Mode Overrides */
+  body.dark-mode .tsx-v5-arw-root,
+  html[data-theme="dark"] .tsx-v5-arw-root,
+  [data-theme="dark"] .tsx-v5-arw-root,
+  body.night-mode .tsx-v5-arw-root,
+  .dark-mode .tsx-v5-arw-root {
+    --bg: #0B0E14;
+    --panel: #131826;
+    --panel2: #0f1420;
+    --line: #1f2637;
+    --text: #E8ECF1;
+    --muted: #8791a3;
+    --pink: #F472B6;
+    --cyan: #5EEAD4;
+    --gold: #FBBF24;
+  }
+
+  .tsx-v5-arw-notice {
+    background: var(--panel2);
+    border-left: 3px solid var(--cyan);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .tsx-v5-arw-eyebrow {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: .1em;
+    color: var(--cyan);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .tsx-v5-arw-eyebrow .rec {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--pink);
+    box-shadow: 0 0 8px var(--pink);
+    animation: tsx-arw-rec 1.4s infinite;
+  }
+  @keyframes tsx-arw-rec { 0%, 100% { opacity: 1 } 50% { opacity: .3 } }
+
+  .tsx-v5-arw-h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(28px, 4.6vw, 46px);
+    line-height: 1.08;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+  .tsx-v5-arw-h1 span {
+    background: linear-gradient(100deg, var(--pink), var(--cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tsx-v5-arw-sub {
+    color: var(--muted);
+    max-width: 560px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+    font-size: 15.5px;
+  }
+
+  .tsx-v5-arw-stat {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tsx-v5-arw-stat span { color: var(--cyan); font-weight: 700; font-size: 14px; }
+
+  .tsx-v5-arw-submit-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(100deg, var(--cyan), var(--pink));
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 34px;
+    transition: .2s;
+  }
+  .tsx-v5-arw-submit-cta:hover { filter: brightness(1.08); transform: translateY(-1px); }
+
+  .tsx-v5-arw-submit-panel {
+    display: none;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 34px;
+  }
+  .tsx-v5-arw-submit-panel.open { display: block; }
+  .tsx-v5-arw-submit-panel h2 { font-family: var(--display); font-size: 18px; margin-bottom: 6px; }
+  .tsx-v5-arw-submit-panel .hint { color: var(--muted); font-size: 12.5px; margin-bottom: 16px; line-height: 1.6; }
+  
+  .tsx-v5-arw-field { margin-bottom: 12px; }
+  .tsx-v5-arw-field label { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 6px; font-family: var(--mono); }
+  .tsx-v5-arw-field input[type="text"], 
+  .tsx-v5-arw-field input[type="url"], 
+  .tsx-v5-arw-field select {
+    width: 100%;
+    background: var(--panel2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text);
+    font-size: 13.5px;
+    outline: none;
+    font-family: inherit;
+  }
+  .tsx-v5-arw-field input:focus, .tsx-v5-arw-field select:focus { border-color: var(--cyan); }
+  
+  .tsx-v5-arw-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    margin: 14px 0;
+    line-height: 1.5;
+  }
+  .tsx-v5-arw-check input { margin-top: 3px; }
+  
+  .tsx-v5-arw-submit-actions { display: flex; gap: 10px; margin-top: 6px; flex-wrap: wrap; }
+  .tsx-v5-arw-btn-primary {
+    background: linear-gradient(100deg, var(--cyan), var(--pink));
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .tsx-v5-arw-btn-secondary {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .tsx-v5-arw-error { color: var(--pink); font-size: 12px; margin-top: 8px; display: none; }
+
+  .tsx-v5-arw-leaderboard {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    margin-bottom: 34px;
+  }
+  .tsx-v5-arw-lb-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .tsx-v5-arw-lb-rank {
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 11px; color: #ffffff;
+  }
+  .tsx-v5-arw-lb-item:nth-child(1) .tsx-v5-arw-lb-rank { background: var(--gold); color: #000; }
+  .tsx-v5-arw-lb-item:nth-child(2) .tsx-v5-arw-lb-rank { background: #c7d0dd; color: #000; }
+  .tsx-v5-arw-lb-item:nth-child(3) .tsx-v5-arw-lb-rank { background: #d7a17a; color: #000; }
+  .tsx-v5-arw-lb-name { color: var(--text); font-family: var(--body); font-weight: 600; }
+
+  .tsx-v5-arw-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .tsx-v5-arw-sort { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tsx-v5-arw-sort button {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .tsx-v5-arw-sort button.active {
+    color: #ffffff;
+    background: linear-gradient(100deg, var(--cyan), var(--pink));
+    border-color: transparent;
+    font-weight: 600;
+  }
+  .tsx-v5-arw-count { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+  .tsx-v5-arw-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .tsx-v5-arw-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--muted);
+    border: 1px dashed var(--line);
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .tsx-v5-arw-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease, border-color .3s ease;
+  }
+  .tsx-v5-arw-card:hover { transform: translateY(-3px); border-color: var(--cyan); }
+
+  .tsx-v5-arw-thumb {
+    position: relative;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--panel2);
+    cursor: pointer;
+  }
+  .tsx-v5-arw-thumb img { width: 100%; height: 100%; object-fit: cover; opacity: .85; }
+  .tsx-v5-arw-thumb iframe { width: 100%; height: 100%; border: 0; }
+  .tsx-v5-arw-play {
+    position: absolute;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    z-index: 2;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .tsx-v5-arw-src-badge {
+    position: absolute;
+    top: 8px; left: 8px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    background: rgba(0,0,0,0.6);
+    padding: 2px 7px;
+    border-radius: 5px;
+    z-index: 2;
+    color: var(--cyan);
+    letter-spacing: .05em;
+  }
+
+  .tsx-v5-arw-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .tsx-v5-arw-tag { font-family: var(--mono); font-size: 10.5px; color: var(--pink); letter-spacing: .05em; }
+  .tsx-v5-arw-card h3 { font-family: var(--display); font-size: 16.5px; margin: 0; font-weight: 600; word-break: break-word; }
+  .tsx-v5-arw-creator { color: var(--muted); font-size: 12.5px; }
+
+  .tsx-v5-arw-actions { display: flex; align-items: center; gap: 10px; margin-top: 4px; flex-wrap: wrap; }
+  .tsx-v5-arw-act {
+    display: flex; align-items: center; gap: 6px;
+    background: transparent; border: none; color: var(--muted);
+    cursor: pointer; font-size: 13px; padding: 4px 6px; border-radius: 6px; transition: .2s;
+  }
+  .tsx-v5-arw-act:hover { color: var(--text); background: var(--panel2); }
+  .tsx-v5-arw-act.voted { color: var(--cyan); }
+  .tsx-v5-arw-act.liked { color: var(--pink); }
+  .tsx-v5-arw-act .n { font-family: var(--mono); font-size: 12.5px; }
+
+  .tsx-v5-arw-comments { margin-top: 6px; border-top: 1px dashed var(--line); padding-top: 10px; }
+  .tsx-v5-arw-clist { display: flex; flex-direction: column; gap: 6px; max-height: 90px; overflow-y: auto; margin-bottom: 8px; }
+  .tsx-v5-arw-clist div { font-size: 12.5px; color: var(--muted); }
+  .tsx-v5-arw-clist b { color: var(--text); font-weight: 600; }
+  .tsx-v5-arw-cform { display: flex; gap: 6px; }
+  .tsx-v5-arw-cform input {
+    flex: 1;
+    background: var(--panel2);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: 7px 10px;
+    color: var(--text);
+    font-size: 12.5px;
+    outline: none;
+  }
+  .tsx-v5-arw-cform input:focus { border-color: var(--cyan); }
+  .tsx-v5-arw-cform button {
+    background: linear-gradient(100deg, var(--cyan), var(--pink));
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 12px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  /* Guide Section */
+  .tsx-v5-arw-guide {
+    margin-top: 40px;
+    padding: 24px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .tsx-v5-arw-guide h2 {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+  .tsx-v5-arw-guide h3 {
+    font-family: var(--display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin: 18px 0 8px;
+  }
+  .tsx-v5-arw-guide p, .tsx-v5-arw-guide li {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .tsx-v5-arw-guide ul { padding-left: 20px; }
+  .tsx-v5-arw-guide strong { color: var(--text); }
+
+  .tsx-v5-arw-related {
+    margin-top: 40px;
+    padding: 24px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .tsx-v5-arw-related h2 {
+    font-family: var(--display);
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+  .tsx-v5-arw-related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .tsx-v5-arw-related-link {
+    background: var(--panel2);
+    border: 1px solid var(--line);
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s;
+  }
+  .tsx-v5-arw-related-link:hover { border-color: var(--cyan); transform: translateY(-2px); }
+  .tsx-v5-arw-related-link strong { color: var(--cyan); display: block; font-size: 15px; margin-bottom: 4px; }
+  .tsx-v5-arw-related-link span { color: var(--muted); font-size: 12.5px; }
+
+  .tsx-v5-arw-footnote {
+    margin-top: 34px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    border-top: 1px dashed var(--line);
+    padding-top: 16px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    .tsx-v5-arw-root { padding: 40px 14px 48px; border-radius: 16px; }
+    .tsx-v5-arw-controls { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<!-- SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Community Render Wall",
+  "applicationCategory": "SocialNetworkingApplication",
+  "operatingSystem": "Web Browser",
+  "description": "A community voting platform for AI-generated videos. Submit YouTube or Vimeo links, vote, like, and comment on the best renders.",
+  "featureList": [
+    "Submit AI-generated videos (YouTube/Vimeo links)",
+    "Vote and like system",
+    "Comment section",
+    "Trending/Newest/Most Liked sorting",
+    "Leaderboard display",
+    "100% client-side demo (requires backend for real-time sharing)"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "Tools-X",
+    "url": "https://www.toolsx.in"
+  }
+}
+</script>
+
+<div class="tsx-v5-arw-notice">
+  ⚠️ <strong>Frontend Demo:</strong> Ye client-side prototype hai. Real-time shared community database (sabhi users ke liye same data) ke liye <strong>Cloudflare Worker + KV/D1</strong> backend integration required hai. Abhi data aapke browser (localStorage) mein save hoga.
+</div>
+
+<div class="tsx-v5-arw-eyebrow"><span class="rec"></span> TOOLS-X RENDER WALL // COMMUNITY</div>
+<h1 class="tsx-v5-arw-h1">Community jo <span>vote karti hai.</span></h1>
+<p class="tsx-v5-arw-sub">Apne AI-generated video ka YouTube ya Vimeo link submit karo — community usko vote, like aur comment karke top pe le jaati hai. Sirf original ya properly licensed videos allowed.</p>
+
+<div class="tsx-v5-arw-stat">Total votes cast so far: <span id="tsxv5-arw-total-votes-n">0</span></div>
+
+<button class="tsx-v5-arw-submit-cta" id="tsxv5-arw-open-submit" aria-label="Apna AI video submit karein">+ Apna AI video submit karo</button>
+
+<div class="tsx-v5-arw-submit-panel" id="tsxv5-arw-submit-panel">
+  <h2>Video submit karo</h2>
+  <p class="hint">Hum koi video file host nahi karte — sirf YouTube ya Vimeo ka link chalega, jisse copyright ka koi jhanjhat na ho. Submit karne se pehle confirm karo ki video aapka khud ka AI-generated hai ya use karne ka permission hai.</p>
+  
+  <div class="tsx-v5-arw-field">
+    <label for="tsxv5-arw-url-input">Video URL (YouTube ya Vimeo) *</label>
+    <input type="url" id="tsxv5-arw-url-input" placeholder="https://youtu.be/... ya https://vimeo.com/..." required>
+  </div>
+  <div class="tsx-v5-arw-field">
+    <label for="tsxv5-arw-title-input">Title *</label>
+    <input type="text" id="tsxv5-arw-title-input" maxlength="80" placeholder="Video ka naam" required>
+  </div>
+  <div class="tsx-v5-arw-field">
+    <label for="tsxv5-arw-tag-input">Category *</label>
+    <select id="tsxv5-arw-tag-input">
+      <option value="CINEMATIC">Cinematic</option>
+      <option value="ANIME">Anime</option>
+      <option value="SURREAL">Surreal</option>
+      <option value="SCI-FI">Sci-Fi</option>
+      <option value="NATURE+AI">Nature + AI</option>
+      <option value="COMMERCIAL">Commercial</option>
+      <option value="OTHER">Other</option>
+    </select>
+  </div>
+  <div class="tsx-v5-arw-field">
+    <label for="tsxv5-arw-creator-input">Aapka naam / handle (optional)</label>
+    <input type="text" id="tsxv5-arw-creator-input" maxlength="40" placeholder="@aapka_handle">
+  </div>
+  
+  <label class="tsx-v5-arw-check">
+    <input type="checkbox" id="tsxv5-arw-rights-check" required>
+    Main confirm karta/karti hoon ki ye video mera khud ka AI-generated kaam hai, ya mujhe ise share karne ka poora adhikaar hai, aur ismein koi copyrighted content nahi hai.
+  </label>
+  
+  <div class="tsx-v5-arw-error" id="tsxv5-arw-error" role="alert"></div>
+  
+  <div class="tsx-v5-arw-submit-actions">
+    <button class="tsx-v5-arw-btn-primary" id="tsxv5-arw-submit-btn">Wall pe daalo</button>
+    <button class="tsx-v5-arw-btn-secondary" id="tsxv5-arw-cancel-btn" type="button">Cancel</button>
+  </div>
+</div>
+
+<div class="tsx-v5-arw-leaderboard" id="tsxv5-arw-leaderboard" aria-label="Top 3 Videos"></div>
+
+<div class="tsx-v5-arw-controls">
+  <div class="tsx-v5-arw-sort" role="tablist" aria-label="Sort videos">
+    <button data-sort="trending" class="active" role="tab" aria-selected="true">🔥 Trending</button>
+    <button data-sort="new" role="tab" aria-selected="false">🆕 Newest</button>
+    <button data-sort="liked" role="tab" aria-selected="false">❤️ Most Liked</button>
+  </div>
+  <span class="tsx-v5-arw-count" id="tsxv5-arw-count">0 renders</span>
+</div>
+
+<div class="tsx-v5-arw-grid" id="tsxv5-arw-grid"></div>
+
+<!-- GUIDE SECTION (500+ words) -->
+<section class="tsx-v5-arw-guide">
+  <h2>🎬 Community Render Wall — Kaise Kaam Karta Hai?</h2>
+  <p>
+    <strong>Community Render Wall</strong> (by Tools-X) ek interactive platform hai jahan AI-generated videos ka display hota hai aur community unhe vote, like, aur comment karke rank karti hai. Yeh tool un creators ke liye hai jo apne AI renders ko showcase karna chahte hain aur community feedback lena chahte hain. Iska design simple hai: submit karo, vote karo, aur top videos leaderboard par chadhte hain.
+  </p>
+
+  <h3>🎥 Video Submission</h3>
+  <p>
+    Video submit karne ke liye sirf YouTube ya Vimeo ka link chahiye. Hum koi video file host nahi karte — isse copyright issues aur server storage ki tension khatam ho jaati hai. Submit karte waqt aapko video ka title, category, aur apna naam/handle dena hota hai. Rights confirmation checkbox bhi tick karna zaroori hai jisse pata chale ki aapko video share karne ka adhikaar hai.
+  </p>
+
+  <h3>👍 Voting & Liking</h3>
+  <p>
+    Har video card par vote (▲) aur like (❤️) buttons hote hain. Ek user ek baar hi vote kar sakta hai (localStorage mein tracked). Trending sort mode votes + likes ke combined score se videos ko rank karta hai. Isse best videos naturally top par aati hain.
+  </p>
+
+  <h3>💬 Comments</h3>
+  <p>
+    Har video ke neeche comment section hai. Aap apna comment likh kar bhej sakte hain. Comments localStorage mein save hote hain, isliye demo ke liye sirf aapke browser mein persist hote hain. Real-time shared comments ke liye backend required hai.
+  </p>
+
+  <h3>🔒 Privacy & Security</h3>
+  <p>
+    Yeh tool frontend demo hai — saara data aapke browser ke localStorage mein rehta hai. Koi video, comment, ya personal data server par upload nahi hota. Backend integration (Cloudflare Worker + KV/D1) ke liye code ready hai, jisse real-time multi-user experience banaya ja sakta hai.
+  </p>
+
+  <h3>📱 Mobile Responsiveness</h3>
+  <p>
+    Fully responsive design — mobile, tablet, desktop sab par smooth chalta hai. Grid layout auto-adjust hota hai, buttons touch-friendly hain, aur sort controls easily accessible hain.
+  </p>
+
+  <h3>💡 Pro Tips for Creators</h3>
+  <ul>
+    <li><strong>High-Quality Thumbnail:</strong> YouTube par custom thumbnail lagayein taaki aapka video card attractive dikhe.</li>
+    <li><strong>Title Optimization:</strong> Short, catchy title use karein jo AI-generated content ko clearly describe kare.</li>
+    <li><strong>Category Selection:</strong> Sahi category choose karein taaki sahi audience tak pahuche.</li>
+    <li><strong>Engagement:</strong> Doosron ke videos par vote aur comment karein — community tabhi grow hogi.</li>
+  </ul>
+</section>
+
+<!-- RELATED TOOLS (Internal Links) -->
+<section class="tsx-v5-arw-related">
+  <h2>🚀 AI Video Tools (Related)</h2>
+  <div class="tsx-v5-arw-related-grid">
+    <a href="https://www.toolsx.in/2026/08/free-ai-video-generator-text-to-video.html" class="tsx-v5-arw-related-link">
+      <strong>Free AI Video Generator</strong>
+      <span>Text se video banayein</span>
+    </a>
+    <a href="https://www.toolsx.in/2026/08/runway-vs-pika-labs-ultimate-video.html" class="tsx-v5-arw-related-link">
+      <strong>Runway vs Pika Labs</strong>
+      <span>AI video generation comparison</span>
+    </a>
+    <a href="https://www.toolsx.in/2026/08/render-karein-audio-visualizer-waveform.html" class="tsx-v5-arw-related-link">
+      <strong>Audio Visualizer</strong>
+      <span>Waveform animation for videos</span>
+    </a>
+  </div>
+</section>
+
+<div class="tsx-v5-arw-footnote">
+  &gt; Votes, likes, comments aur submissions sabhi visitors ke beech shared hain aur real-time save hote hain (Backend required). Sirf YouTube/Vimeo links accept hote hain — koi video file yahan host nahi hoti. © 2026 Tools-X.
+</div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  const root = document.getElementById('tsxv5-arw-root');
+  const STORE_KEY = 'tsx:arw_videos_v2';
+  const MY_VOTES_KEY = 'tsx:arw_my_votes';
+  const MY_LIKES_KEY = 'tsx:arw_my_likes';
+
+  let videos = [];
+  let myVotes = [];
+  let myLikes = [];
+  let sortMode = 'trending';
+
+  function loadVideos(){
+    try { const r = localStorage.getItem(STORE_KEY); videos = r ? JSON.parse(r) : []; } catch(e) { videos = []; }
+  }
+  function saveVideos(){ try { localStorage.setItem(STORE_KEY, JSON.stringify(videos)); } catch(e) { console.error('Save failed:', e); } }
+  function loadMyState(){
+    try {
+      const rVotes = localStorage.getItem(MY_VOTES_KEY); myVotes = rVotes ? JSON.parse(rVotes) : [];
+      const rLikes = localStorage.getItem(MY_LIKES_KEY); myLikes = rLikes ? JSON.parse(rLikes) : [];
+    } catch(e) { myVotes = []; myLikes = []; }
+  }
+  function saveMyVotes(){ try { localStorage.setItem(MY_VOTES_KEY, JSON.stringify(myVotes)); } catch(e){} }
+  function saveMyLikes(){ try { localStorage.setItem(MY_LIKES_KEY, JSON.stringify(myLikes)); } catch(e){} }
+
+  function parseVideoUrl(url){
+    try {
+      const cleanUrl = url.trim();
+      if (!/^https?:\/\//i.test(cleanUrl)) return null;
+      const u = new URL(cleanUrl);
+      const host = u.hostname.replace('www.', '');
+      if (host === 'youtu.be') {
+        const id = u.pathname.slice(1);
+        if (id && /^[a-zA-Z0-9_-]{11}$/.test(id)) return { type: 'youtube', id, thumb: `https://img.youtube.com/vi/${id}/hqdefault.jpg` };
+      }
+      if (host === 'youtube.com' || host === 'm.youtube.com') {
+        const id = u.searchParams.get('v') || (u.pathname.startsWith('/embed/') ? u.pathname.split('/')[2] : null) || (u.pathname.startsWith('/shorts/') ? u.pathname.split('/')[2] : null);
+        if (id && /^[a-zA-Z0-9_-]{11}$/.test(id)) return { type: 'youtube', id, thumb: `https://img.youtube.com/vi/${id}/hqdefault.jpg` };
+      }
+      if (host === 'vimeo.com') {
+        const parts = u.pathname.split('/').filter(Boolean);
+        const id = parts[0];
+        if (id && /^\d+$/.test(id)) return { type: 'vimeo', id, thumb: null };
+      }
+    } catch(e) {}
+    return null;
+  }
+
+  function escapeHtml(str){
+    if (typeof str !== 'string') return '';
+    return str.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  const panel = document.getElementById('tsxv5-arw-submit-panel');
+  document.getElementById('tsxv5-arw-open-submit').addEventListener('click', () => { panel.classList.toggle('open'); });
+  document.getElementById('tsxv5-arw-cancel-btn').addEventListener('click', () => { panel.classList.remove('open'); clearForm(); });
+
+  function clearForm(){
+    document.getElementById('tsxv5-arw-url-input').value = '';
+    document.getElementById('tsxv5-arw-title-input').value = '';
+    document.getElementById('tsxv5-arw-creator-input').value = '';
+    document.getElementById('tsxv5-arw-rights-check').checked = false;
+    document.getElementById('tsxv5-arw-error').style.display = 'none';
+    document.getElementById('tsxv5-arw-error').textContent = '';
+  }
+
+  function showError(msg){
+    const el = document.getElementById('tsxv5-arw-error');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+
+  document.getElementById('tsxv5-arw-submit-btn').addEventListener('click', () => {
+    const url = document.getElementById('tsxv5-arw-url-input').value;
+    const title = document.getElementById('tsxv5-arw-title-input').value.trim();
+    const tag = document.getElementById('tsxv5-arw-tag-input').value;
+    const creator = document.getElementById('tsxv5-arw-creator-input').value.trim() || 'Anonymous';
+    const rightsOk = document.getElementById('tsxv5-arw-rights-check').checked;
+
+    if (!title) { showError('Kripya video ka Title daalein.'); return; }
+    const parsed = parseVideoUrl(url);
+    if (!parsed) { showError('Sirf valid YouTube ya Vimeo HTTPS link chalega.'); return; }
+    if (!rightsOk) { showError('Rights confirm karne wala checkbox tick karna zaroori hai.'); return; }
+
+    const video = {
+      id: Date.now(), title: title, tag: tag, creator: escapeHtml(creator), type: parsed.type,
+      videoId: parsed.id, thumb: parsed.thumb, votes: 0, likes: 0, comments: [], created: Date.now()
+    };
+    videos.unshift(video);
+    saveVideos();
+    panel.classList.remove('open');
+    clearForm();
+    renderGrid(); renderLeaderboard(); renderTotalVotes();
+  });
+
+  function sorted(){
+    const arr = [...videos];
+    if (sortMode === 'trending') arr.sort((a,b) => (b.votes + b.likes) - (a.votes + a.likes));
+    if (sortMode === 'new') arr.sort((a,b) => b.created - a.created);
+    if (sortMode === 'liked') arr.sort((a,b) => b.likes - a.likes);
+    return arr;
+  }
+
+  function renderTotalVotes(){
+    const total = videos.reduce((sum, v) => sum + (v.votes || 0), 0);
+    const el = document.getElementById('tsxv5-arw-total-votes-n');
+    if (el) el.textContent = total.toLocaleString('en-IN');
+  }
+
+  function renderLeaderboard(){
+    const el = root.querySelector('#tsxv5-arw-leaderboard');
+    if (videos.length === 0) { el.innerHTML = ''; return; }
+    const top3 = [...videos].sort((a,b) => (b.votes + b.likes) - (a.votes + a.likes)).slice(0, 3);
+    el.innerHTML = top3.map((v, i) => `
+      <div class="tsx-v5-arw-lb-item">
+        <span class="tsx-v5-arw-lb-rank">${i + 1}</span>
+        <span class="tsx-v5-arw-lb-name">${escapeHtml(v.title)}</span>
+        <span>· ${v.votes + v.likes} pts</span>
+      </div>`).join('');
+  }
+
+  function thumbHtml(v){
+    if (v.type === 'youtube') {
+      return `<img src="${escapeHtml(v.thumb)}" alt="${escapeHtml(v.title)} Thumbnail" loading="lazy" decoding="async"><div class="tsx-v5-arw-play" aria-hidden="true">▶</div>`;
+    }
+    return `<div class="tsx-v5-arw-play" aria-hidden="true">▶</div>`;
+  }
+
+  function renderGrid(){
+    const grid = root.querySelector('#tsxv5-arw-grid');
+    const list = sorted();
+    root.querySelector('#tsxv5-arw-count').textContent = list.length + ' renders';
+
+    if (list.length === 0) {
+      grid.innerHTML = `<div class="tsx-v5-arw-empty">Abhi tak koi video submit nahi hua.<br>Sabse pehla banne ke liye "+ Apna AI video submit karo" dabao.</div>`;
+      return;
+    }
+
+    grid.innerHTML = list.map(v => `
+      <article class="tsx-v5-arw-card" data-id="${v.id}">
+        <div class="tsx-v5-arw-thumb" data-play="${v.id}" role="button" tabindex="0" aria-label="Play ${escapeHtml(v.title)}">
+          <span class="tsx-v5-arw-src-badge">${v.type.toUpperCase()}</span>
+          ${thumbHtml(v)}
+        </div>
+        <div class="tsx-v5-arw-body">
+          <span class="tsx-v5-arw-tag">${escapeHtml(v.tag)}</span>
+          <h3>${escapeHtml(v.title)}</h3>
+          <span class="tsx-v5-arw-creator">by ${escapeHtml(v.creator)}</span>
+          <div class="tsx-v5-arw-actions">
+            <button class="tsx-v5-arw-act tsx-v5-arw-vote ${myVotes.includes(v.id) ? 'voted' : ''}" data-id="${v.id}" aria-label="Vote">▲ <span class="n">${v.votes}</span></button>
+            <button class="tsx-v5-arw-act tsx-v5-arw-like ${myLikes.includes(v.id) ? 'liked' : ''}" data-id="${v.id}" aria-label="Like">${myLikes.includes(v.id) ? '❤️' : '🤍'} <span class="n">${v.likes}</span></button>
+            <button class="tsx-v5-arw-act tsx-v5-arw-cmtcount" disabled aria-label="Comments">💬 <span class="n">${v.comments.length}</span></button>
+          </div>
+          <div class="tsx-v5-arw-comments">
+            <div class="tsx-v5-arw-clist">
+              ${v.comments.length > 0 ? v.comments.map(c => `<div><b>${escapeHtml(c.name)}:</b> ${escapeHtml(c.text)}</div>`).join('') : '<div>Sabse pehla comment aap likho.</div>'}
+            </div>
+            <div class="tsx-v5-arw-cform">
+              <input type="text" placeholder="Comment likho..." data-id="${v.id}" maxlength="200" aria-label="Add comment" />
+              <button data-id="${v.id}" class="tsx-v5-arw-csend" aria-label="Send comment">Bhejo</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    `).join('');
+
+    grid.querySelectorAll('.tsx-v5-arw-thumb').forEach(el => {
+      const playHandler = () => {
+        const v = videos.find(x => x.id == el.dataset.play);
+        if (!v) return;
+        const src = v.type === 'youtube'
+          ? `https://www.youtube.com/embed/${v.videoId}?autoplay=1&rel=0`
+          : `https://player.vimeo.com/video/${v.videoId}?autoplay=1`;
+        el.innerHTML = `<iframe src="${src}" title="Video Player" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>`;
+      };
+      el.addEventListener('click', playHandler);
+      el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playHandler(); } });
+    });
+
+    grid.querySelectorAll('.tsx-v5-arw-vote').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = parseInt(btn.dataset.id, 10);
+        const v = videos.find(x => x.id === id);
+        if (!v) return;
+        if (!myVotes.includes(id)) { v.votes++; myVotes.push(id); } else { v.votes = Math.max(0, v.votes - 1); myVotes = myVotes.filter(x => x !== id); }
+        saveVideos(); saveMyVotes(); renderGrid(); renderLeaderboard(); renderTotalVotes();
+      });
+    });
+
+    grid.querySelectorAll('.tsx-v5-arw-like').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = parseInt(btn.dataset.id, 10);
+        const v = videos.find(x => x.id === id);
+        if (!v) return;
+        if (!myLikes.includes(id)) { v.likes++; myLikes.push(id); } else { v.likes = Math.max(0, v.likes - 1); myLikes = myLikes.filter(x => x !== id); }
+        saveVideos(); saveMyLikes(); renderGrid(); renderLeaderboard(); renderTotalVotes();
+      });
+    });
+
+    grid.querySelectorAll('.tsx-v5-arw-csend').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = parseInt(btn.dataset.id, 10);
+        const input = grid.querySelector(`input[data-id="${id}"]`);
+        const val = input.value.trim();
+        if (!val) return;
+        const v = videos.find(x => x.id === id);
+        if (!v) return;
+        v.comments.push({ name: 'Guest', text: val, ts: Date.now() });
+        saveVideos(); renderGrid();
+      });
+    });
+  }
+
+  root.querySelectorAll('.tsx-v5-arw-sort button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      sortMode = btn.dataset.sort;
+      root.querySelectorAll('.tsx-v5-arw-sort button').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      renderGrid();
+    });
+  });
+
+  (function init(){
+    loadVideos(); loadMyState(); renderLeaderboard(); renderTotalVotes(); renderGrid();
+  })();
+})();
+</script>
